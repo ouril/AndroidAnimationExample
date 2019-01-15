@@ -11,7 +11,6 @@ import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import kotlinx.android.synthetic.main.main_view.view.*
-import java.util.zip.Inflater
 
 class MainView(
     context: Context,
@@ -21,8 +20,7 @@ class MainView(
 
     init {
         LayoutInflater.from(context).inflate(R.layout.main_view, this)
-        var visible = true
-        //activity.overridePendingTransition(R.anim.hold, R.anim.fade_in);
+        var visible = false
         button.setOnClickListener {
 
 
@@ -31,14 +29,14 @@ class MainView(
                 visible = !visible
                 animatedView.visibility = if (visible) View.VISIBLE else View.GONE
 
-
             }
 
-/*
-            context.startActivity(
-                Intent(context, AnimationActivity::class.java)
+        }
 
-            */
+        key_button.setOnClickListener {
+            val intent = Intent(activity, AnimationActivity::class.java)
+            activity.startActivity(intent)
+            activity.overridePendingTransition(R.anim.appear, R.anim.hide);
         }
 
     }

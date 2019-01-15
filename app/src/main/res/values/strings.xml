@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">AnimationExample</string>
+    <string name="text_for_click">
+        Жамкай на чубрикана чтобы посмотреть на динозавров!!!\n\nНа ключ чтобы открыть новую Activity!!!
+    </string>
 </resources>

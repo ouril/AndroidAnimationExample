@@ -7,4 +7,10 @@
         android:layout_height="match_parent"
         tools:context=".AnimationActivity">
 
+    <ru.otus.animationexample.AnimatedView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </ru.otus.animationexample.AnimatedView>
+
 </android.support.constraint.ConstraintLayout>
